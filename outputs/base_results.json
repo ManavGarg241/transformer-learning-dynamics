@@ -1,0 +1,221 @@
+{
+  "tag": "base",
+  "config": {
+    "seq_len": 6,
+    "d_model": 64,
+    "num_heads": 4,
+    "num_layers": 2,
+    "ff_dim": 128,
+    "dropout": 0.1,
+    "batch_size": 16,
+    "epochs": 35,
+    "lr": 0.001
+  },
+  "final_loss": 0.05214672163128853,
+  "min_train_loss": 0.08082037108639877,
+  "max_train_loss": 4.248277862866719,
+  "loss_curve": [
+    4.248277862866719,
+    3.816897392272949,
+    3.525713245073954,
+    3.125110387802124,
+    2.740455468495687,
+    2.422132054964701,
+    2.064748843510946,
+    1.795248528321584,
+    1.5671965678532918,
+    1.3366438746452332,
+    1.1534295876820881,
+    0.9504057168960571,
+    0.8119101226329803,
+    0.6940490404764811,
+    0.6060582647720972,
+    0.5333194583654404,
+    0.4580646902322769,
+    0.4303768376509349,
+    0.35610245664914447,
+    0.30867794901132584,
+    0.27343346178531647,
+    0.25248800963163376,
+    0.21756093949079514,
+    0.19230067978302637,
+    0.17909021178881326,
+    0.16579392552375793,
+    0.15451951076587042,
+    0.13565082103013992,
+    0.1318469656010469,
+    0.12038600817322731,
+    0.10865186154842377,
+    0.10220713416735332,
+    0.0944669892390569,
+    0.08758167549967766,
+    0.08082037108639877
+  ],
+  "grad_norm_curve": [
+    1.5816598155675734,
+    1.4333996889043892,
+    1.4911303010157455,
+    1.4899747664553582,
+    1.510164849424158,
+    1.444556258308572,
+    1.3862097173377608,
+    1.3402216698579117,
+    1.289583379809988,
+    1.1969583513311597,
+    1.141017146936983,
+    0.9936868329711249,
+    0.9743921199521829,
+    0.865462329661075,
+    0.8167641278645457,
+    0.7687590774793618,
+    0.6951147807091452,
+    0.7187490263950972,
+    0.6026007771276963,
+    0.4932131875564263,
+    0.48154862464660614,
+    0.49373462508793436,
+    0.3964002653517071,
+    0.3779149952467153,
+    0.3226700358864793,
+    0.32552788841597297,
+    0.36318981720645643,
+    0.27684161308537136,
+    0.2784129486033238,
+    0.2545824791417947,
+    0.21987384080222813,
+    0.2134184281055581,
+    0.20792113146163535,
+    0.19525511367745788,
+    0.16537281247145216
+  ],
+  "n_train_failures": 0,
+  "n_probe_failures": 8,
+  "n_failures_captured": 8,
+  "failure_examples_train": [],
+  "failure_examples_probe": [
+    {
+      "probe_sentence": "attention in extremely noisy data can become unreliable .",
+      "input": [
+        "attention",
+        "in",
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "can"
+      ],
+      "position": 0,
+      "true": "in",
+      "pred": "weights",
+      "confidence": 0.41561636328697205
+    },
+    {
+      "probe_sentence": "attention in extremely noisy data can become unreliable .",
+      "input": [
+        "in",
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "can",
+        "<unk>"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": "a",
+      "confidence": 0.7875207662582397
+    },
+    {
+      "probe_sentence": "attention in extremely noisy data can become unreliable .",
+      "input": [
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "can",
+        "<unk>",
+        "<unk>"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": ".",
+      "confidence": 0.4863761365413666
+    },
+    {
+      "probe_sentence": "models sometimes predict wrong words when context shifts suddenly .",
+      "input": [
+        "models",
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "words",
+        "when"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": "can",
+      "confidence": 0.9430331587791443
+    },
+    {
+      "probe_sentence": "models sometimes predict wrong words when context shifts suddenly .",
+      "input": [
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "words",
+        "when",
+        "context"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": ".",
+      "confidence": 0.5256440043449402
+    },
+    {
+      "probe_sentence": "models sometimes predict wrong words when context shifts suddenly .",
+      "input": [
+        "<unk>",
+        "<unk>",
+        "words",
+        "when",
+        "context",
+        "<unk>"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": ".",
+      "confidence": 0.5009844303131104
+    },
+    {
+      "probe_sentence": "models sometimes predict wrong words when context shifts suddenly .",
+      "input": [
+        "<unk>",
+        "words",
+        "when",
+        "context",
+        "<unk>",
+        "<unk>"
+      ],
+      "position": 0,
+      "true": "words",
+      "pred": ".",
+      "confidence": 0.4216811954975128
+    },
+    {
+      "probe_sentence": "this sentence contains novel tokens quantum zebra matrix .",
+      "input": [
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "<unk>",
+        "tokens",
+        "<unk>"
+      ],
+      "position": 0,
+      "true": "<unk>",
+      "pred": ".",
+      "confidence": 0.46346813440322876
+    }
+  ],
+  "artifacts": {
+    "loss_grad_plot": "outputs\\base_loss_grad.png",
+    "attention_plot": "outputs\\base_attention_heatmap.png"
+  }
+}

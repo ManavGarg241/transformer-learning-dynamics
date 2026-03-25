@@ -1,0 +1,66 @@
+{
+  "base": {
+    "final_loss": 0.05214672163128853,
+    "min_train_loss": 0.08082037108639877,
+    "n_failures_captured": 8,
+    "config": {
+      "seq_len": 6,
+      "d_model": 64,
+      "num_heads": 4,
+      "num_layers": 2,
+      "ff_dim": 128,
+      "dropout": 0.1,
+      "batch_size": 16,
+      "epochs": 35,
+      "lr": 0.001
+    }
+  },
+  "heads_2": {
+    "final_loss": 0.05091557279229164,
+    "min_train_loss": 0.0834501360853513,
+    "n_failures_captured": 8,
+    "config": {
+      "seq_len": 6,
+      "d_model": 64,
+      "num_heads": 2,
+      "num_layers": 2,
+      "ff_dim": 128,
+      "dropout": 0.1,
+      "batch_size": 16,
+      "epochs": 35,
+      "lr": 0.001
+    }
+  },
+  "embed_96": {
+    "final_loss": 0.017475316300988197,
+    "min_train_loss": 0.030048866445819538,
+    "n_failures_captured": 8,
+    "config": {
+      "seq_len": 6,
+      "d_model": 96,
+      "num_heads": 4,
+      "num_layers": 2,
+      "ff_dim": 192,
+      "dropout": 0.1,
+      "batch_size": 16,
+      "epochs": 35,
+      "lr": 0.001
+    }
+  },
+  "seq_8": {
+    "final_loss": 0.04417955502867699,
+    "min_train_loss": 0.07099485248327256,
+    "n_failures_captured": 4,
+    "config": {
+      "seq_len": 8,
+      "d_model": 64,
+      "num_heads": 4,
+      "num_layers": 2,
+      "ff_dim": 128,
+      "dropout": 0.1,
+      "batch_size": 16,
+      "epochs": 35,
+      "lr": 0.001
+    }
+  }
+}
